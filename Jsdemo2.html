@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <h1>Javascript Exercise</h1>
+        <p id = 'students'></p>
+        <p id = 'grades'></p>
+        <p id = 'students_loop'></p>
+        <p id = 'message'></p>
+    </body>
+    <script>
+        const students = [
+                          'David Ndivo',
+                          'Eric Mwangi',
+                          'Joseph Kalonje',
+                          'Jane Grace',
+                          'Kate Mwende',
+                          'Ann Khalid'
+                         ]
+     document.getElementById('students').innerHTML = students    
+     const grades = [79,82,64,77,88,66]    
+     document.getElementById('grades').innerHTML = grades     
+     
+     // for loop - iterating through array
+     let student = "";
+     for (let i = 0; i < students.length; i++) {
+        student += students[i] + "<br>";
+
+    document.getElementById('students_loop').innerHTML = student;
+     }
+
+     // condition
+     let message;
+     if (students.length < 2) {
+        message = "add more students";
+     } else {
+        message = "Minimum no of students reached";
+
+     }
+     document.getElementById('message').innerHTML = message;
+    </script>
+
+</html>
