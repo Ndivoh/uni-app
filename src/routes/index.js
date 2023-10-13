@@ -8,6 +8,8 @@ import LogIn from "./../components/LogIn.vue"
 
 
 
+
+
 const routes = [
     {
       path: '/',
@@ -29,6 +31,8 @@ const routes = [
         name: 'login',
         component: LogIn,
       }
+      
+        
 ]
 const router = createRouter({
   history: createWebHistory(),
